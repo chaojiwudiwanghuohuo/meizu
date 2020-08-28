@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>jQuery实现轮播图</title>
+		<link rel="stylesheet" href="./css/iconfont.css">
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			#meizu-banner {
+				    height: 630px;
+				    position: absolute;
+				    width: 100%;
+				    top: 0px;
+				    overflow: hidden;
+			}
+
+			.meizu-index-banner {
+				position: absolute;
+				height: 630px;
+				top: 50%;
+				left: 50%;
+				width: 2560px;
+				margin-top: -340px;
+				margin-left: -1280px;
+				overflow: hidden;
+			}
+
+			.img li {
+				list-style: none;
+				float: left;
+				width: 2560px;
+			}
+
+			.img {
+				position: absolute;
+				width: 23040px;
+			}
+
+			.img  img {
+				height: 630px;
+				width: 2560px;
+				display: block;
+			}
+
+			.cicle {
+				width: 500px;
+				padding: 0 10px;
+				height: 25px;
+				position: absolute;
+				left: 50%;
+				top: 90%;
+				margin-left: -50px;
+			}
+
+			.cicle li {
+				width: 8px;
+				height: 8px;
+				background-color: #fff;
+				margin: 5px 8px;
+				border-radius: 50%;
+				cursor: pointer;
+				float: left;
+				list-style: none;
+				box-sizing: border-box;
+			}
+			.img a {
+				display: block;
+				width: 2560px;
+			}
+			#meizuPhone::after{
+				clear: both;
+				content: "";
+				display:block;
+				height:0;
+				visibility: hidden;
+			}
+			/* 轮播图下一行 */
+				 #meizuPhone{
+					 height: 342px;
+					 text-align: center;
+				 }
+				 #meizuPhone #meizu-phone{
+					 height:240px;
+				 }
+				 #meizuPhone #meizu-phone ul li{
+					 float: left;
+					 list-style: none;
+				 }
+				 #meizuPhone #meizu-phone ul li img{
+					 height:130px;
+					 width:130px;
+				 } 
+		</style>
+	</head>
+	<body>
+		 <!-- <div class="header"></div> -->
+		<div id="meizu-banner">
+
+			<div class="meizu-index-banner">
+              
+				<ul class="img">
+					<li><a href=""><img src="./img/0.jpg"></a></li>
+					<li><a href=""><img src="./img/1.jpg"></a></li>
+					<li><a href=""><img src="./img/2.jpg"></a></li>
+					<li><a href=""><img src="./img/3.jpg"></a></li>
+					<li><a href=""><img src="./img/4.jpg"></a></li>
+					<li><a href=""><img src="./img/5.jpg"></a></li>
+					<li><a href=""><img src="./img/6.jpg"></a></li>
+					<li><a href=""><img src="./img/7.jpg"></a></li>
+					<li><a href=""><img src="./img/0.jpg"></a></li>
+				</ul>
+				<ul class="cicle">
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		</div> 
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	//轮播图开始
+	let index = 0;
+	let time = null;
+	$(".cicle li").click(function() {
+		index = $(this).index();
+		move();
+	});
+	time = setInterval(function() {
+		index++;
+		move();
+	}, 5000);
+	$("#meizu-banner").mouseover(function() {
+		clearInterval(time);
+	});
+	$("#meizu-banner").mouseout(function() {
+		time = setInterval(function() {
+			index++;
+			move();
+		}, 5000);
+	});
+
+	function move() {
+		//让选中的li变成透明表框为白色，其余的都是白色实心圆
+		if (index == 2 || index == 6) {
+			$(".cicle li").css("backgroundColor", "#666").eq(index).css({
+				backgroundColor: "transparent",
+				"border": "1px solid #fff"
+			});
+		} else {
+			$(".cicle li").css("backgroundColor", "#fff").eq(index).css({
+				backgroundColor: "transparent",
+				"border": "1px solid #fff"
+			});
+		}
+
+		//如果到第九张图片时，让第一个小圆点变为透明
+		if (index == $(".img li").length) {
+			$("img li").eq(0).css({
+				"backgroundColor": "transparent",
+				"border": "1px solid #fff"
+			});
+		}
+		//隔5秒换张图片
+		$(".img").animate({
+			left: -2560 * index
+		}, 1000, function() {
+			if (index == $(".cicle li").length) {
+				index = 0;
+				$(".img").css({
+					"left": "0"
+				});
+			}
+		});
+	}
+	//轮播图结束
+</script>

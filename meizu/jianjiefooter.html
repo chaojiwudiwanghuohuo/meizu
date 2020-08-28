@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#footer{
+				width: 100%;
+				height: 58px;
+				background-color: #fff;
+			}
+			#footer_top{
+				width: 100%;
+				height: 140px;
+				text-align: center;
+				background-color: #fff;
+				margin-top: 48px;
+			}
+			  #footer_top .footer_ul{
+				width: 1000px;
+				height: 69px;
+				float: left;
+				text-align: center;
+				margin-left: 26px;
+				margin-top: 48px;
+			}
+			#footer_top .footer_ul a{
+				width: 150px ;
+				height: 69px;
+			}
+			#footer_top .footer_ul li{
+				float: left;
+				list-style: none;
+				width: 150px;
+				height: 69px;
+				text-align: center;
+			}
+			#footer_top ul li span{
+				line-height: 30px;
+				color: #999;
+				font-size: 12px;
+			}
+			#footer_top .footer_img{
+				width: 50px;
+				height: 39px;
+				display: block;
+				margin: 0 50px;
+			}
+			#footer_top .online_server{
+				width:155.7px ;
+				height:103px ;
+				float: left;
+				margin-top: 30px;
+				margin-left: 100px;
+			}
+			#footer_top .online_server  span{
+				       color: #999;
+				       font-size: 12px;
+				       line-height: 30px;
+					   display:block ; 
+			}
+			#footer_top .online_server  p{
+				    color: #008cff;
+				    font-size: 23px;
+				    font-weight: 400;
+				    margin-top: -6px;
+				    line-height: 40px;
+			}
+			#footer_top .online_server a{
+				    height: 30px;
+				    padding: 0 16px;
+				    overflow: hidden;
+				    position: relative;
+				    line-height: 30px;
+				    color: #fff;
+				    border-radius: 20px;
+				    margin-top: 3px;
+				    display: inline-block;
+				    font-size: 14px;
+				    background: #008cff;
+					text-decoration: none;
+			}
+			 .footer-hr {
+			    margin: 10px  50px;
+			    display: block;
+			    height: 1px;
+			    border: 0;
+			    border-top: 1px solid #eee;
+			    padding: 0;
+			}
+			#footer_bottom{
+				width:100% ;
+				height: 55px;
+				margin-left: 30px;
+			}
+			#footer_bottom .bottom_ul {
+				width:974x ;
+				height: 18px;
+				color: #999;
+				text-align: left;
+				font-size: 12px;
+				margin-left:70px ;
+			}
+			#footer_bottom .bottom_ul .lastli{
+				border-right: 1px solid transparent;
+				position: relative;
+			}
+			#footer_bottom .bottom_ul li{
+				    padding-right: 15px;
+				    border-right: 1px solid #d6d6d6;
+				    float: left;
+				    height: 18px;
+				    margin-right: 15px;
+					list-style: none;
+			}
+			#footer_bottom .bottom_ul a{
+				    color: black;
+				    display: block;
+				    line-height: 18px;
+			}
+			 .language {
+				 display: none;
+				 width: 114px;
+				 height: 190px;
+				 border: 1px solid #eee;
+				 font-size: 12px;
+				 background-color: #fff;
+				 box-sizing: border-box;
+				 position: absolute;
+				 left: -16px;
+				 top: -200px;
+			 } 
+			 #footer_bottom .bottom_ul .language li{
+				width: 114px;
+				height: 35px; 
+				margin-left:16px;
+				margin-top: 5px;
+				padding-right: 0;
+				border-right:1px solid transparent;
+				margin-right:0;
+				list-style: none;
+			 }
+			 .language img{
+				width: 18px;
+				height: 18px;				 
+			}
+			 .lastli_logo{
+				 width: 18px;
+				 height: 18px;
+			 }
+			#footer_bottom .bottom_ul a:hover {
+			    color: #008cff;
+			}
+			.footer_bottomright{
+				width: 160px;
+				height: 30px;
+			}
+			.footer_bottomleft{
+				color: #999;
+				width: 943px;
+				text-align: left;
+				font-size: 12px;
+				box-sizing: border-box;
+				margin-top: 10px;
+				margin-left: 20px;
+				float: left;
+			}
+			.footer_bottomleft a{
+				text-decoration: none;
+				margin-left: 8px;
+			}
+			.footer_bottomleft a:hover{
+			    color: #008cff;
+			}
+			.footer_bottomright{
+				width:160px ;
+				height: 30px;
+				float: left;
+				margin-top: 10px;
+				margin-left: 90px;
+				position: relative;
+			}
+			.footer_bottomright img{
+				width: 20px;
+				height:20px ;
+				margin-right: 10px;
+			}
+			.footer_bottomright a{
+				margin-right: 5px;
+				position: relative;
+			}
+			.footer_bottomright i .erweima1{
+				width: 180px;
+				height:180px ;
+				position: absolute;
+				left:-60px;
+				top:-190px;
+				display: none;
+			}
+			.footer_bottomright i .erweima2{
+				width: 180px;
+				height:180px ;
+				position: absolute;
+				left:-60px;
+				top:-190px;
+				display: none;
+			}
+			.erweima:hover  .erweima1{
+				display: block;
+			}
+			.wechat:hover  .erweima2{
+				display: block;
+			}
+			.service-online{
+				display: inline-block;
+				height: 20px;
+				line-height: 18px;
+				width: 64px;
+				color: white;
+				background-color: #32a5e7;
+				border-radius: 2px;
+				margin-left: 30px;
+			}
+			.service-num{
+				color: black;
+				margin-left: 20px;
+			}
+			.service{
+				color: black;
+				margin-left: 20px;
+			}
+			#footer #footer_bottom .lastsli {
+				border-right:1px solid transparent;
+			}
+			
+			#weixin-img{
+				position: absolute;
+				left:0px ;
+				top:10px ;
+				display: block;
+			}
+			.trangles{
+				width: 0;
+				height: 0;
+				border: 10px solid transparent;
+				border-top: 10px solid red;
+				position: absolute;
+				left:0px ;
+				top:20px ;
+			}
+			.footer_bottomright .wechat #weixin-img{
+				width: 180px;
+				height: 180px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="footer">
+				<div id="footer_bottom">
+					<ul  class="bottom_ul">
+						<li><a href="">关于魅族</a></li>
+						<li><a href="">工作机会</a></li>
+						<li><a href="">联系我们</a></li>
+						<li><a href="">法律声明</a></li>
+						<li><a href="">常见问题</a></li>
+						<li class="lastli"><a href="">简体中文</a></li>
+						<li class="lastsli"><span class="service">客服热线</span><span class="service-num">400-788-3333</span><span class="service-online">在线客服</span></li>
+					</ul>
+					<div  class="footer_bottomleft">
+						©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved. 
+						   <a href="">粤ICP备13003602号</a>
+						   <a href="">合字B2-20170010 </a>
+						   <a href="">营业执照</a>
+						   <a href="">法律声明</a>
+						   <span>粤公网安备 44049102496009 号</span>
+						   <a href=""></a>
+						   <a href=""></a>
+						   <a href=""></a>
+					</div>
+					 <div class="footer_bottomright">
+						<a href=""><img src="./img/lianxi7.png" alt="sina"></a>
+						<a href=""><img src="./img/lianxi5.png" alt="qq"></a>
+						<a href=""><img src="./img/lianxi3.png" class="wechat"></a>
+					</div>
+				</div>
+		</body>
+	</body>
+</html>

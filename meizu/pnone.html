@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				background:#f4f4f4;
+			}
+			a{
+				text-decoration: none;
+			}
+			h1,h2,h3,h4,h5,h6{
+				list-style: none;
+				font-weight: 400;
+			}
+			li{
+				list-style: none;
+			}
+			#pic{
+			 	  height: 450px;
+			      width: 100%;
+			      overflow: hidden;
+			      position: relative;
+				  border-top: 1px solid #eee;
+			 }
+			 .pic{
+			 		height: 450px;
+			 		position:absolute;
+			 		left: 50%;
+			 		top: 50%;
+			 		transform: translate(-50%,-50%);
+			 } 
+			 
+			#meizu_img{
+			  	   height: 248px;
+			       width: 100%;
+			       overflow: hidden;
+			       position: relative;
+			 	   border-top: 1px solid #eee;
+			  }
+			.meizu_img{
+			  		height: 248px;
+			  		position:absolute;
+			  		left: 50%;
+			  		top: 50%;
+			  		transform: translate(-50%,-50%);
+			  } 
+			  #meizu_phones {
+				  min-height: 900px;
+				  background-color:#f4f4f4;
+			  }
+			  #meizu_phones ul{
+				  text-align: center;
+			  }
+			  #meizu_phones ul li p em{
+				  font-size: 16px;
+				   color: #c00;
+			  }
+			   #meizu_phones ul li span{
+				  font-size: 28px;
+				  color: #c00;
+			  }
+			  #meizu_phones ul li{
+				      position: relative;
+				      float: left;
+				      width: 403px;
+				      height: 556px;
+				      margin: 0 15px 15px 0;
+				      background: #fff;
+				      box-sizing: border-box;
+				      transition: all .3s ease;
+					  list-style: none;
+			  }
+			  #meizu_phones ul li:nth-child(1){
+				  margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(4){
+			  		margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(7){
+			  				  margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(10){
+			  				  margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(13){
+			  				  margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(16){
+			  				  margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(19){
+			  				  margin-left: 52px;
+			  }
+			  #meizu_phones ul li:nth-child(22){
+			  				  margin-left: 52px;
+			  }
+			   #meizu_phones ul li img{
+				       margin-top: 35px;
+			   }
+			   #meizu_phones ul li:hover{
+				      box-shadow: 0 15px 30px rgba(0,0,0,.1);
+			  }
+			   #meizu_phones ul li img{
+				      width: 230px;
+				      height: 230px;
+			   }
+			     #meizu_phones ul li h3{
+				       font-size: 23px;
+				       color: #333;
+			   }
+			   #meizu_phones ul li p{
+				       display: block;
+				       margin: 5px auto;
+				       color: #666;
+				       text-align: center;
+				       min-height: 24px;
+				       font-size: 16px;
+				       font-weight: 300;
+				       max-width: 270px;
+				       text-overflow: ellipsis;
+				       white-space: nowrap;
+				       overflow: hidden;
+			   }
+			    #meizu_phones h1{
+					height: 50px;
+					margin-top: 60px;
+					display: block;
+				}
+				#meizu_phones h1 .meizu_a{
+					margin-left: 1100px;
+				}
+			    #meizu_phones h1 span{
+				   font-weight: 400;
+				   color: #515151;
+				   font-style: normal;
+				   float: left;
+				   margin-left: 52px;
+			   }
+			    #meizu_phones h1 a{
+					    float: left;
+					    width: 50px;
+					    height: 20px;
+					    margin-right:20px;
+					    line-height: 20px;
+						font-size: 18px;
+						font-weight: 300;
+				}
+				#meizu_phones h1 a:hover{
+					    color: #008cff;
+				}
+				.meizu_a{
+					float: left;
+				}
+				.ul_cicle1{
+					width: 403px;
+	                height: 26px;
+					margin-left: 60px;
+					margin-bottom: 15px;
+				}
+				#meizu_phones .ul_cicle1 li{
+					width: 26px;
+					height: 26px;
+					float: left;
+					padding: 3px;
+					border-radius: 50%;
+					border: 1px solid transparent;
+					border-color: #aaa;
+					float: left;
+					margin-right: 25px;
+				}
+				#meizu_phones .ul_cicle1 li:nth-child(4){
+					margin-left: 0;
+				}
+				 #meizu_phones .ul_cicle1 li img{
+					width: 18px;
+					height: 18px;
+					margin-top: 0;
+				}
+				#produces{
+					min-height:500px;
+				}
+				#produce {
+					position: relative;
+					min-height:500px;
+				}
+				 #produce h2{
+					     text-align: left;
+					     font-size: 24px;
+					     color: #333;
+					     font-weight: 400;
+					     overflow: hidden;
+					     margin-top: 90px;
+					     margin-bottom: 25px;
+						 margin-left: 50px;
+				 }
+				 .produce_ul{
+					 background-color: #fff;
+					 overflow: hidden;
+					 /* width: 19808px; */
+					 height: 429px;
+					 margin-left:50px ;
+					 text-align: center;
+					 box-sizing: border-box;
+					 position: absolute;
+					 left:0;
+				 }
+				 .produce_ul li{
+					  float: left;
+					  width: 320px;
+				 }
+				 .produce_ul li img{
+					 width:255px ;
+					 height:255px ;
+					 margin-top: 48px;
+				 }
+				 .produce_ul li h4{
+					     font-size: 21px;
+					     color: #2b2b2b;
+					     overflow: hidden;
+					     text-overflow: ellipsis;
+					     white-space: nowrap;
+						 margin-top: 20px;
+				 }
+				  .produce_ul li p{
+					  margin-top: 16px;
+				  }
+				 .produce_ul li p em{
+					     font-size: 16px;
+					     color: #c00;
+				 }
+				 .produce_ul li p span{
+					    font-size: 27px;
+						color: #c00;
+				 }
+				 .produce_li li{
+					     width: 11px;
+					     height: 11px;
+					     box-sizing: border-box;
+					     border-radius: 50%;
+					     box-shadow: none;
+					     background-color: #fff;
+					     border: 1px solid #a1a1a1;
+						 float: left;
+						 margin-left: 10px;
+				 }
+				  .bottom_ul{
+					  height: 22px;
+					  text-align: center;
+					  box-sizing: border-box;
+				  }
+				 .bottom_ul .produce_li{
+					margin-left: 642px;
+					 height: 22px;
+					 width: 300px;
+					 color: #666;
+				 }	
+		</style>
+	</head>
+	<body>
+		<!-- 导航栏 -->
+		<header></header>
+		<!-- 第二行 -->
+		<div id="pic"><img src="./img/head.jpg"  class="pic"></div>
+		<!-- 第三行 手机 -->
+		<div id="meizu_phones">
+			<h1>
+				 <span>手机</span>
+			     <div class="meizu_a">
+					  <a href="">推荐</a>
+				      <a href="">新品</a>
+			          <a href="">价格</a>
+				 </div>
+			</h1>
+			<ul>
+				<li>
+					<img src="./img/shouji1.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/c1.png" ></li>
+						<li><img src="./img/c2.png" ></li>
+						<li><img src="./img/c3.png" ></li>
+						<li><img src="./img/c4.png" ></li>
+					</ul>
+					<h3>魅族 17 Pro</h3>
+					<p>【限时领券至高立省200】【购17Pro赠全新壳膜套装】【学生购机享精美礼品】高通骁龙 865 + UFS 3.1 + LPDDR5 | 6400W 全场景 AR 专业影像系统 </p>
+					<p><em>￥</em><span>4299</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji2.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/a1.png" ></li>
+						<li><img src="./img/a2.png" ></li>
+						<li><img src="./img/a3.png" ></li>
+						<li><img src="./img/a4.png" ></li>
+						<li><img src="./img/a5.png" ></li>
+					</ul>
+					<h3>魅族 17</h3>
+					<p>【限时领券立省200】【购魅族17赠全新壳膜套装】【学生购机享精美礼品】高通骁龙 865 + UFS 3.1 高速闪存</p>
+					<p><em>￥</em><span>4299</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji3.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/c3.png" ></li>
+					</ul>
+					<h3>魅族 17 Pro 晓芳窑艺术典藏版</h3>
+					<p>这艺术 科技极了</p>
+					<p><em>￥</em><span>3699</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji4.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/b1.png" ></li>
+						<li><img src="./img/b2.png" ></li>
+						<li><img src="./img/b3.png" ></li>
+					</ul>
+					<h3>魅族 16T</h3>
+					<p>6.5英寸极边全面屏 | 骁龙855旗舰处理器 | 4500mAh续航怪兽 | UFS 3.0 高速闪存 | 「双」·立体声扬声器 | 超广角 AI 三摄 | 线性振动马达 | 全球频段</p>
+					<p><em>￥</em><span>1999</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji5.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/d1.png" ></li>
+						<li><img src="./img/c4.png" ></li>
+						<li><img src="./img/d3.png" ></li>
+						<li><img src="./img/d4.png" ></li>
+					</ul>
+					<h3>魅族 16s Pro</h3>
+					<p>高通骁龙 855 Plus  | 索尼 4800W 像素超广角 AI 三摄 | 极边全面屏 | Flyme8 尝鲜体验 | 极速屏下指纹 | 全功能NFC</p>
+					<p><em>￥</em> <span>2699</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji6.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/c1.png" ></li>
+						<li><img src="./img/e2.png" ></li>
+						<li><img src="./img/e3.png" ></li>
+						<li><img src="./img/c4.png" ></li>
+					</ul>
+					<h3>魅族 16Xs</h3>
+					<p>极边全面屏 | 4800W AI三摄 | 疾速屏下指纹 | 4000mAh大电池 | 高通骁龙675 | Onemind 3.0 | 绚丽多彩新色系</p>
+					<p><em>￥</em><span>1499</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji7.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/c1.png" ></li>
+						<li><img src="./img/e2.png" ></li>
+						<li><img src="./img/c4.png" ></li>
+					</ul>
+					<h3>魅族 16s</h3>
+					<p>高通骁龙855 | 4800W光学防抖 | 对称式AMOLED全面屏 | 极速屏下指纹 | 全功能NFC </p>
+					<p><em>￥</em><span>2699</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji5.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/c1.png" ></li>
+					</ul>
+					<h3>魅族 17 航母限定版</h3>
+					<p>高通骁龙 865 + UFS 3.1 高速闪存 | 6400W 全场景影像系统 | 定制三星 Super AMOLED 90 帧直屏 | 4500mAh 超大电池 + 30W 快充 | 智能全功能 NFC</p>
+					<p><em>￥</em><span>4299</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji9.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/a1.png" ></li>
+					</ul>
+					<h3>魅族 16s 白夜童话限量礼盒</h3>
+					<p>以梦为马 乘风破浪</p>
+					<p><em>￥</em><span>3099</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji10.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/a2.png" ></li>
+						<li><img src="./img/a1.png" ></li>
+						<li><img src="./img/e2.png" ></li>
+					</ul>
+					<h3>魅族 Note9</h3>
+					<p>骁龙675 | 后置4800万 | 前置2000万 | 独家定制水滴设计全面屏 | 4000mAh大容量电池 | 18W mCharge快充 </p>
+					<p><em>￥</em><span>1199</span></p>
+				</li>
+				<li>
+					<img src="./img/shoujij11.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/a2.png" ></li>
+						<li><img src="./img/e2.png" ></li>
+						<li><img src="./img/ff1.png" ></li>
+						<li><img src="./img/ff2.png" ></li>
+					</ul>
+					<h3>魅族 Note8</h3>
+					<p>骁龙632 | 6.0 英寸全面屏 | 3600mAh 大电池 | mCharge 快充加持 | Dual PD 全像素双核对焦 |人脸指纹双解锁</p>
+					<p><em>￥</em><span>899</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji12.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/a2.png" ></li>
+						<li><img src="./img/a1.png" ></li>
+						<li><img src="./img/e2.png" ></li>
+					</ul>
+					<h3>魅族 X8</h3>
+					<p>骁龙710 | 6.2寸定制浅刘海屏 | 89.6%屏占比 | 旗舰双摄 | 人脸+指纹双解锁</p>
+					<p><em>￥</em><span>1298</span></p>
+				</li>
+				<li>
+					<img src="./img/shoujij13.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/a2.png" ></li>
+						<li><img src="./img/a1.png" ></li>
+					</ul>
+					<h3>魅族 V8 标配版</h3>
+					<p>5.7英寸HD+全面屏 智能美颜</p>
+					<p><em>￥</em><span>799</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji14.jpg">
+					<ul class="ul_cicle1">
+						<li><img src="./img/e2.png"></li>
+						<li><img src="./img/ff3.png" ></li>
+						<li><img src="./img/a2.png" ></li>
+						<li><img src="./img/ff1.png" ></li>
+					</ul>
+					<h3>魅族 V8 高配版</h3>
+					<p>Helio P22 处理器 | 5.7 英寸全面屏 | 后置双摄组合 | 双色温双闪光灯 | 人脸+指纹双解锁</p>
+					<p><em>￥</em><span>898</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji15.jpg">
+					<h3>魅族 16 X</h3>
+					<p>骁龙710 | 屏幕下指纹 | 对称式全面屏 | 前置2000万像素 + AI人脸识别 | 后置索尼2000万像素双摄 + 光学防抖</p>
+					<p><em>￥</em><span>1598</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji16.jpg">
+					<h3>魅族 16th Plus</h3>
+					<p>骁龙845 | 屏幕下指纹 | 前后2000万像素摄像头 | 6.5英寸屏幕 | 4×4 MIMO 天线 | mEngine | 超线性双扬声器</p>
+					<p><em>￥</em><span>2098</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji17.jpg">
+					<h3>魅族 16th</h3>
+					<p>骁龙845 | 屏幕下指纹 | 前后2000万像素摄像头 | 6.0英寸屏幕 | mEngine | 超线性双扬声器 |  铜管散热</p>
+					<p><em>￥</em><span>1898</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji15.jpg">
+					<h3>魅蓝 6T</h3>
+					<p>双摄全面屏，游戏长续航</p>
+					<p><em>￥</em><span>799</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji19.jpg">
+					<h3>魅族 15 Plus</h3>
+					<p>三星8895处理器 2000万暗光双摄</p>
+					<p><em>￥</em><span>1798</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji20.jpg">
+					<h3>魅族 M15</h3>
+					<p>骁龙626 前置2000万AI智能美颜</p>
+					<p><em>￥</em><span>1398</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji21.jpg">
+					<h3>魅族 15</h3>
+					<p>骁龙660 | 2000万暗光双摄 | 3倍无损变焦 | mEngine触感引擎 | 立体声扬声器</p>
+					<p><em>￥</em><span>1498</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji22.jpg">
+					<h3>魅蓝 E3</h3>
+					<p>骁龙636处理器 全系6G大运存</p>
+					<p><em>￥</em><span>1799</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji23.jpg">
+					<h3>魅蓝 S6</h3>
+					<p>Exynos 7872疾速游戏芯片 侧面指纹解锁</p>
+					<p><em>￥</em><span>999</span></p>
+				</li>
+				<li>
+					<img src="./img/shouji24.jpg">
+					<h3>魅族 17 Pro【限时福利】</h3>
+					<p>【魅族17Pro指定版本专享6期免息+领券立省150】高通骁龙 865 + UFS 3.1 + LPDDR5 | 6400W 全场景 AR 专业影像系统 </p>
+					<p><em>￥</em><span>4299</span></p>
+				</li>
+			</ul>
+		</div>
+		<div id="meizu_img"><img src="./img/main.jpg" class="meizu_img"></div>
+		<div id="produces">
+			<div id="produce">
+			<h2>为您推荐</h2>
+			<ul class="produce_ul">
+				<li>
+					<a href=""><img src="./img/main1.jpg"></a>
+					<h4>魅族 17 </h4>
+					<p><em>￥</em><span>3699</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main2.jpg"></a>
+					<h4>魅族 17 Pro</h4>
+					<p><em>￥</em><span>4299</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main3.jpg"></a>
+					<h4>魅族 16T</h4>
+					<p><em>￥</em><span>1999</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main4.jpg"></a>
+					<h4>魅族 POP2 真无线蓝牙耳机</h4>
+					<p><em>￥</em><span>399</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main5.jpg"></a>
+					<h4>魅族中国红 Type-C 金属编织线</h4>
+					<p><em>￥</em><span>39</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main6.jpg"></a>
+					<h4>魅族移动电源3</h4>
+					<p><em>￥</em><span>79</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main7.jpg"></a>
+					<h4>魅族 EP3C 耳机</h4>
+					<p><em>￥</em><span>129</span></p>
+				</li>
+				<li>
+					<a href=""><img src="./img/main8.jpg"></a>
+					<h4>魅族 HIFI 解码耳放</h4>
+					<p><em>￥</em><span>169</span></p>
+				</li>
+			</ul>
+		</div>
+		</div>
+		<div class="bottom_ul">
+			<ul class="produce_li">
+				<li class="first_li"></li>
+				<li class="second_li"></li>
+				<li class="last_li"></li>
+			</ul>
+		</div>
+		<foot></foot>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$(function () {
+	 	$('header').load('navigation.html');
+	 });
+	 $(function () {
+	  	$('foot').load('footer.html');
+	  });
+	  $(".first_li").click(function(){
+		  $(".produce_ul").css({"left":"0"});
+	  });
+	  $(".second_li").click(function(){
+	  		  $(".produce_ul").css({"left":"-960px"});
+	  });
+	  $(".last_li").click(function(){
+	  		  $(".produce_ul").css({"left":"-1300px"});
+	  });
+</script>

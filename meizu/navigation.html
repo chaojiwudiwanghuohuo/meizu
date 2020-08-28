@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./css/iconfont.css">
+		<link rel="stylesheet" href="./css/iconfont2.css">
+		<link rel="stylesheet" href="./css/iconfont3.css">
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			#navigation{
+				 height:82px;
+				 width:100%;
+				 background-color: transparent;
+				 position: relative;
+				 z-index: 999;
+			 }
+			 #safe{
+				 width:1116px;
+			 }
+			 #navigation span{
+				 display: block;
+				 float: left;
+				 height:58px;
+				 margin-top:24px;
+				 margin-left: 114px;
+				 margin-right:116px ;
+				 font-size: 24px;
+			 }
+			 #navigation #navigation_ul{
+				 float: left;
+				 height:82px;
+			 }
+			 #navigation #navigation_ul li{
+				 list-style: none;
+				 float: left;
+				 margin-top:26px;
+				 height:82px;
+			 }
+			 #navigation #navigation_ul li a{
+				 text-decoration: none;
+				 padding: 30px 10px;
+				 font-size: 14px;
+				 color: #000;
+			 }
+			  #navigation input{
+				height:28px;
+			 	margin-top:26px;
+			 	margin-left:26px;
+				margin-right: 18px;
+			 	float: left;
+			 	border-radius: 15px;
+			 	outline: none;
+				position: absolute;
+				left:920px;
+				/* top:0px; */
+			 }
+			 #navigation .sousuo{
+				 width:17px;
+				 height:14px;
+				 position: absolute;
+				 left:968px;
+				 top:4px;
+			 }
+			 #navigation #people{
+				display: block;
+				float: left; 
+				color: #000;
+				font-size: 44px;
+				margin:0;
+				margin-top:12px;
+				margin-right: 18px;
+				position: absolute;
+				left:1130px; ;
+				top: 2px;
+			 }
+			 #navigation #gouwuche{
+				display: block;
+				float: left; 
+				color: #000;
+				width:18px;
+				height:24px;
+				margin:0;
+				margin-top:24px;
+				font-size: 20px;
+				position: absolute;
+				left: 1180px;
+				top: 2px;
+			 }
+			 /* 购物车的下拉框 */
+			  #navigation  #gouwuche .gouwuche_ul{
+				  text-align: left;
+				  display: block;
+				  width: 290px;
+				  height:110px;
+				  background: #fff;
+				  color: #262626;
+				  font-size: 14px;
+				  position: absolute;
+				  left:-270px;
+				  top: 40px;
+				  display: none; 
+			  }
+			  #navigation  #gouwuche .gouwuche_ul li{
+				  margin-top: 30px;
+				  float: left;
+			  }
+			  #navigation  #gouwuche .gouwuche_trangle{
+				 display: none; 
+				  height: 0;
+				  width: 0; 
+				  border: 5px solid transparent;
+				  border-bottom:5px solid #fff;
+				  position: absolute;
+				  left:-104px ;
+				  top: 6px;
+			  }
+			    #navigation  #gouwuche .gouwuche_ul li img{
+				   margin-right:15px;
+				   margin-left: 46px;
+			   }
+			  #navigation  #gouwuche .gouwuche_ul li:nth-child(2){
+				  width:150px ;
+				  height:60px;
+				  list-style: none;
+			  }
+			   #navigation  #gouwuche .gouwuche_ul li em{
+				   font-style: normal;
+			   }
+			  #navigation .zero{
+				  background:#c00;
+				  color: #fff;
+				  position: absolute;
+				  left: 1195px;
+				  top:18px;
+				  font-style: normal;
+				  height:15px;
+				  width:13px;
+				  border-radius: 50%;
+				  text-indent: 0;
+			  }
+			/*  #navigation #navigation_ul #phone_bgc{
+				  display: none;
+				   width:100%;
+				   height:180px;
+				   background-color: #fff;
+			  } */
+			   #navigation #navigation_ul .phone{
+				   position:absolute;
+				   height:200px;
+				  /* width: 1240px; */
+				   left:215px;
+				   top:62px;
+				   display: none;
+				   background-color: #fff;
+			   }
+			    #navigation #navigation_ul .phone li{
+					float:left;
+					height:180px;
+					width:120px;
+					font-size: 14px;
+					margin-right: 8px;
+					text-align: center;
+				}
+			   #navigation #navigation_ul .phone img{
+			   	    height:120px;
+					width:120px;
+			   }
+			   #navigation #navigation_ul .phone em{
+			   	    font-style: normal;	   
+			   }
+			   #navigation #navigation_ul .earphone{
+			   				   position:absolute;
+			   				   height:180px;
+			   				   left:165px;
+			   				   top:62px;
+							   display: none;
+							   background-color: #fff;
+			   }
+			    #navigation #navigation_ul .earphone li{
+			   					float:left;
+			   					height:180px;
+			   					width:120px;
+			   					font-size: 14px;
+			   					margin-right: 5px;
+			   					text-align: center;
+								
+			   				}
+			   #navigation #navigation_ul .earphone img{
+			   	                height:120px;
+			   					width:120px;
+			   }
+			   #navigation #navigation_ul .earphone em{
+			   	    font-style: normal;	
+					font-size: 14px;
+			   }
+			   #navigation #navigation_ul .parts{
+				           background-color: #fff;
+			   				   position:absolute;
+			   				   height:180px;
+			   				   left:165px;
+			   				   top:62px;
+							   display: none;
+			   }
+			    #navigation #navigation_ul .parts li{
+			   					float:left;
+			   					height:180px;
+			   					width:120px;
+			   					font-size: 14px;
+			   					margin-right: 5px;
+			   					text-align: center;
+			   				}
+			   #navigation #navigation_ul .parts img{
+			   	    height:120px;
+			   					width:120px;
+			   }
+			   #navigation #navigation_ul .parts em{
+			   	    font-style: normal;	
+			   					font-size: 14px;
+			   }
+			   #navigation #navigation_ul .life{
+			   				   position:absolute;
+			   				   height:180px;
+							   width:100%;
+			   				   left:165px;
+			   				   top:62px;
+							   display: none;
+							   background-color: #fff;
+			   }
+			    #navigation #navigation_ul .life li{
+			   					float:left;
+			   					height:180px;
+			   					width:130px;
+			   					font-size: 14px;
+			   					margin-right: 5px;
+			   					text-align: center;
+			   				}
+			   #navigation #navigation_ul .life img{
+			   	    height:120px;
+			   		width:120px;
+			   }
+			   #navigation #navigation_ul .life em{
+			   	    font-style: normal;	
+			   		font-size: 14px;
+			   }
+			   #navigation #navigation_ul .app{
+			   				   position:absolute;
+			   				    height:270px;
+							   width:1000;
+							   margin:0 auto;
+			   				   left:115px;
+			   				   top:62px; 
+							   display: none;
+							   background-color: #fff;
+			   }
+			     #navigation #navigation_ul .app img{
+					 height:270px;
+					 width:1000px;
+				 }
+				  #navigation #people .people_li{
+					  display: none;
+					  width:90px;
+					  height:140px;
+					  background: #fff;
+					  position: absolute;
+					  left: -20px;
+					  top:43px;
+					  box-sizing: border-box;
+					  list-style: none;
+				  }
+				  #navigation #people .people_li li{
+					 text-align: center;
+				  	 width:90px;
+				  	 height:35px;
+					 margin:0;
+					 font-size: 12px;
+					 line-height: 35px;
+				  }
+				   #navigation #people .people_li li a{
+					   color: #515151;
+					   text-decoration: none;
+				   }
+				  #navigation #people  .trangle{
+					  display: none;
+					  height: 0;
+					  width: 0; 
+					  border: 5px solid transparent;
+					  border-bottom:5px solid #fff;
+					  position: absolute;
+					  left:-95px ;
+					  top: 10px;
+				  }
+		</style>
+	</head>
+	<body>
+		<div id="navigation">
+			<div id="safe">
+				<span class="iconfont icon-meizu1"></span>
+			<ul id="navigation_ul">
+				<li id="phone"><a href="pnone.html">手机</a>
+				    <div  id="phone_bgc">
+						<ul class="phone" >
+						<li>
+							<img src="./img/phone1.jpg">
+					        <em>[热卖]魅族 17</em>
+					        <p>￥3699</p>
+						</li>
+						<li>
+							<img src="./img/phone2.jpg">
+							<em>[热卖]魅族 17 Pro</em>
+							<p>￥4299</p>
+						</li>
+						<li>
+							<img src="./img/phone3.png">
+							<em>魅族 17航母限定版</em>
+							<p>￥4299</p>
+						</li>
+						<li>
+							<a href="xiangqing.html"><img src="./img/phone4.jpg"></a>
+							<em>魅族 晓芳窑艺...</em>
+							<p>￥9999</p>
+						</li>
+						<li>
+							<img src="./img/phone5.jpg">
+							<em>魅族 16T</em>
+							<p>￥2299</p>
+						</li>
+						<li><img src="./img/phone6.jpg">
+					        <em>魅族 16Xs</em>
+					        <p>￥1499</p>
+						</li>
+						<li>
+							<img src="./img/phone7.jpg">
+							<em>魅族 16th</em>
+							<p>￥1898</p>
+						</li>
+						<li>
+							<img src="./img/phone8.jpg">
+							<em>魅族 X8</em>
+							<p>￥1298</p>
+						</li>
+					</ul>
+					</div>
+					
+				</li>
+				<li id="earphone"><a href="shwngxue.html">声学</a>
+				     <ul class="earphone">
+				     	<li>
+				     		<img src="./img/earphone1.jpg">
+				             <em>魅族 HD60 降噪耳机</em>
+				             <p>￥1099</p>
+				     	</li>
+				     	<li>
+				     		<img src="./img/earphone2.png">
+				     		<em>魅族 HD60 头戴式蓝</em>
+				     		<p>￥499</p>
+				     	</li>
+				     	<li>
+				     		<img src="./img/earphone3.png">
+				     		<em>魅族 HIFI 解码耳放</em>
+				     		<p>￥169</p>
+				     	</li>
+				     	<li>
+				     		<img src="./img/earphone4.png">
+				     		<em>魅族 EP63NC 无线降...</em>
+				     		<p>￥399</p>
+				     	</li>
+				     	<li>
+				     		<img src="./img/earphone5.jpg">
+				     		<em>魅族 EP3c 耳机</em>
+				     		<p>￥129</p>
+				     	</li>
+				     	<li><img src="./img/earphone6.png">
+				             <em>魅族 POP2 真无线蓝...</em>
+				             <p>￥399</p>
+				     	</li>
+				     	<li>
+				     		<img src="./img/earphone7.jpg">
+				     		<em>魅族 EP52 Lite 蓝牙...</em>
+				     		<p>￥129</p>
+				     	</li>
+				     	<li>
+				     		<img src="./img/earphone8.jpg">
+				     		<em>MEIZU UR高端定制</em>
+				     		<p>￥200</p>
+				     	</li>
+				     </ul>
+				</li>
+				<li id="parts"><a href="https://lists.meizu.com/page/list?categoryid=186">配件</a>
+				      <ul class="parts">
+				      	<li>
+				      		<img src="./img/life1.jpg">
+				              <em>Lifeme双肩包</em>
+				              <p>￥299</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/life2.jpg">
+				      		<em>Pandaer [17] 系列...</em>
+				      		<p>￥269</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/life3.png">
+				      		<em>Pandaer [17] 系列...</em>
+				      		<p>￥99</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/life4.png">
+				      		<em>[新品] Lifeme 相机包</em>
+				      		<p>￥129</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/life5.png">
+				      		<em>魅族 防飞溅声波电动...</em>
+				      		<p>￥299</p>
+				      	</li>
+				      	<li><img src="./img/life6.png">
+				              <em>魅族几件都市双肩包</em>
+				              <p>￥179</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/life7.png">
+				      		<em>Pandaer readnap T恤</em>
+				      		<p>￥199</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/life8.jpg">
+				      		<em>Flyme 8 暗夜流光卫衣</em>
+				      		<p>￥269</p>
+				      	</li>
+				      </ul>
+				</li>
+				<li id="life"><a href="https://lists.meizu.com/page/list/?categoryid=222">生活</a>
+				      <ul class="life" >
+				      	<li>
+				      		<img src="./img/parts1.jpg">
+				              <em>魅族超充GaN 三口充电器 17</em>
+				              <p>￥199</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/parts2.jpg">
+				      		<em>魅族无线超充板</em>
+				      		<p>￥169</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/parts3.png">
+				      		<em>Pandaer [17] 夏日系...</em>
+				      		<p>￥69</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/parts4.jpg">
+				      		<em>Pandaer [17] 系列 手...</em>
+				      		<p>￥49</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/parts5.png">
+				      		<em>魅族 17系列 液态硅胶壳</em>
+				      		<p>￥89</p>
+				      	</li>
+				      	<li><img src="./img/parts6.png">
+				              <em>魅族 超充 USB-C 移动电源</em>
+				              <p>￥169</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/parts7.png">
+				      		<em>魅族 Type-C 数据线</em>
+				      		<p>￥49</p>
+				      	</li>
+				      	<li>
+				      		<img src="./img/parts8.png">
+				      		<em>魅族双 USB-C 快充线</em>
+				      		<p>￥49</p>
+				      	</li>
+				      </ul>
+				</li>
+				<li><a href="https://www.flyme.com/">Flyme</a></li>
+				<li><a href="http://care.meizu.com/">服务</a></li>
+				<li><a href="https://service.meizu.com/retail/index.html?click=store_index_dh_7&click=click_store_index_dh_7">专卖店</a></li>
+				<li><a href="https://bbs.meizu.cn/?click=store_index_dh_8&click=click_store_index_dh_8">社区</a></li>
+				<li><a href="https://business.meizu.com/#/">政企定制</a></li>
+				<li id="app">
+					<a href="https://www.meizu.com/">APP下载</a>
+				      <ul class="app">
+						  <li>
+							  <img src="./img/app.jpg">
+						  </li>
+					  </ul>
+				</li>
+			</ul>
+			<input type="text"  placeholder="魅族 16T" >
+			<a href="" class="sousuo"><span class="iconfont icon-sousuo"></span></a>
+			<span class="iconfont icon-ren"  id="people">
+				<span class="trangle"></span>
+				<ul  class="people_li">
+					<li><a href="loadin.html">立即登录</a></li>
+					<li><a href="load.html">立即注册</a></li>
+					<li><a href="https://login.flyme.cn/vCodeLogin?useruri=https%3A%2F%2Fstore.meizu.com%2Fmember%2Flogin.htm?useruri=https%253A%252F%252Fordercenter.meizu.com%252Flist%252Findex.html&sid=unionlogin&service=store&autodirct=true">我的订单</a></li>
+					<li><a href="https://mformy.meizu.com/">M码通道</a></li>
+				</ul>
+			</span>
+			<a href="https://cart.meizu.com/" class="gouwuche_a">
+				<span class="iconfont icon-gouwuche1-copy" id="gouwuche">
+					<span class="gouwuche_trangle"></span>
+					<ul class="gouwuche_ul">
+					   <li><img src="./img/panda.png"></li>
+					   <li>
+						   <em>登录后可显示</em>
+				           <em>您账号中已加入的商品哦</em>
+				           <em>~</em>
+				       </li>
+				    </ul>
+				</span>
+			</a>
+				   
+			
+			<em  class="zero">0</em>
+			</div>
+		</div>
+	</body>
+</html>
+<script  src="jQuery.js"></script>
+<script>
+	//当鼠标滑上手机的li时，让ul显示，离开时不显示
+	$("#phone").mouseover(function(){
+		// $("#phone_bgc").css({"display":"block"});
+		$(".phone").css({"display":"block"});
+		//让选中的li透明度为1，其他li透明度变为0.5
+		$(".phone li").mouseover(function(){
+			$(this).css("opacity","1").siblings($(this)).css("opacity","0.5");
+	   });
+	});
+	$("#phone").mouseout(function(){
+		$(".phone").css({"display":"none"});
+	});
+	
+	//当鼠标滑上声学的li时，让ul显示，离开时不显示
+	$("#earphone").mouseover(function(){
+		$(".earphone").css({"display":"block"});
+		$(".earphone li").mouseover(function(){
+			$(this).css("opacity","1").siblings($(this)).css("opacity","0.5");
+		});
+	});
+	$("#earphone").mouseout(function(){
+		$(".earphone").css({"display":"none"});
+	});
+	//当鼠标滑上配件的li时，让ul显示，离开时不显示
+	$("#parts").mouseover(function(){
+		$(".parts").css({"display":"block"});
+		$(".parts li").mouseover(function(){
+			$(this).css("opacity","1").siblings($(this)).css("opacity","0.5");
+		});
+	});
+	$("#parts").mouseout(function(){
+		$(".parts").css({"display":"none"});
+	});
+	//当鼠标滑上生活的li时，让ul显示，离开时不显示
+	$("#life").mouseover(function(){
+		$(".life").css({"display":"block"});
+		$(".life li").mouseover(function(){
+			$(this).css("opacity","1").siblings($(this)).css("opacity","0.5");
+		});
+	});
+	$("#life").mouseout(function(){
+		$(".life").css({"display":"none"});
+	});
+	//当鼠标滑上下载APP的li时，让ul显示，离开时不显示
+	$("#app").mouseover(function(){
+		$(".app").css({"display":"block"});
+	});
+	$("#app").mouseout(function(){
+		$(".app").css({"display":"none"});
+	});
+	//当鼠标滑上人的标志的时候  显示ul
+	$("#people").mouseenter(function(){
+		$(".people_li").css({display:"block"});
+		$(".trangle").css({display:"block"});
+		$(".people_li li a").mouseenter(function(){
+			$(this).css({color:"blue"});
+		});
+		$(".people_li li a").mouseleave(function(){
+			$(this).css({color:"#515151"});
+		});
+	});
+	$("#people").mouseleave(function(){
+		$(".people_li").css({display:"none"});
+		$(".trangle").css({display:"none"});
+	});
+	//当鼠标滑上购物车的标志的时候  显示ul
+	$("#gouwuche").mouseover(function(){
+		$(".gouwuche_trangle").css({display:"block"});
+		$(".gouwuche_ul").css({display:"block"});
+		
+	});
+	$("#gouwuche").mouseleave(function(){
+		$(".gouwuche_trangle").css({display:"none"});
+		$(".gouwuche_ul").css({display:"none"});
+	});
+</script>

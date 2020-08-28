@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.navigation {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+
+			.navigation li {
+				float: left;
+				width: 150px;
+				position: relative;
+			}
+
+			.navigation li a {
+				background: #262626;
+				color: #fff;
+				display: block;
+				padding: 8px 7px 8px 7px;
+				text-decoration: none;
+				border-top: 1px solid #F2861D;
+				text-align: center;
+				text-transform: uppercase;
+			}
+
+			.navigation li a:hover {
+				color: #F2861D;
+			}
+
+			.navigation ul {
+				position: absolute;
+				left: 0;
+				display: none;
+				margin: 0 0 0 -1px;
+				padding: 0;
+				list-style: none;
+				border-bottom: 3px solid #F2861D;
+			}
+
+			.navigation ul li {
+				width: 150px;
+				float: left;
+				border-top: none;
+			}
+
+			.navigation ul a {
+				display: block;
+				height: 15px;
+				padding: 8px 7px 13px 7px;
+				color: #fff;
+				text-decoration: none;
+				border-top: none;
+				border-bottom: 1px dashed #6B6B6B;
+			}
+
+			.navigation ul a:hover {
+				color: #F2861D;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="navigation">
+			<li><a href="#">Main Cat 1</a></li>
+			<li><a href="#">Main Cat 2 </a>
+				<ul>
+					<li><a href="#">Sub Cat 2-1</a></li>
+					<li><a href="#">Sub Cat 2-2</a></li>
+					<li><a href="#">Sub Cat 2-3</a></li>
+					<li><a href="#">Sub Cat 2-4</a></li>
+					<li><a href="#">Sub Cat 2-5</a></li>
+				</ul>
+				<div class="clear"></div>
+			</li>
+			<li><a href="#">Main Cat 3 </a>
+				<ul>
+					<li><a href="#">Sub Cat 3-1</a></li>
+					<li><a href="#">Sub Cat 3-2</a></li>
+					<li><a href="#">Sub Cat 3-3</a></li>
+					<li><a href="#">Sub Cat 3-4</a></li>
+					<li><a href="#">Sub Cat 3-5</a></li>
+					<li><a href="#">Sub Cat 3-6</a></li>
+					<li><a href="#">Sub Cat 3-7</a></li>
+				</ul>
+				<div class="clear"></div>
+			</li>
+			<li><a href="#">Main Cat </a></li>
+		</ul>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		//hover([over,]out)
+		//over:鼠标移到元素上要触发的函数
+		//out:鼠标移出元素要触发的函数
+		$('.navigation li').hover(
+			function() {
+				$(this).find("ul").fadeIn();
+				// $("ul",this).fadeIn();
+			},
+			function() {
+				$(this).find("ul").fadeOut();
+				// $("ul",this).fadeOut();
+			}
+		);
+	});
+</script>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			body{
+				background-color: #F4F6FA;
+			}
+			#nav{
+				    height: 80px;
+					background-color: #fff;
+					box-sizing: border-box;
+					line-height: 80px;
+					position: relative;
+					border-bottom: 1px solid #efefef;
+			}
+			#nav .mz{
+				   margin-left:70px;
+				   margin-top: 26px;
+				   float: left;
+			}
+			#nav .left_ul{
+				width: 400px;
+				height: 80px;
+				float: left;
+				margin-left: 30px;
+				line-height: 80px;
+			}
+			#nav .left_ul li{
+				float: left;
+				list-style: none;
+			}
+			.li1{
+				color: #333;
+			}
+			.li2,.li3,.li4{
+				color: #999;
+			}
+			.li1:after{
+				content: '>';
+				margin: 0 10px;
+				color: #999;
+			}
+			.li2:after{
+				content: '>';
+				margin: 0 10px;
+				color: #999;
+			}
+			.li3:after{
+				content: '>';
+				margin: 0 10px;
+				color: #999;
+			}
+			.li4:after{
+				content: '>';
+				margin: 0 10px;
+				color: #999;
+			}
+			.right_ul{
+				float:left;
+				margin-left: 480px;
+				font-size: 12px;
+				color: #666;
+			}
+			.right_ul .dingdanli,.djli{
+				float: left;
+				list-style: none;
+			}
+			.right_ul li:hover{
+				color: #32A5E7;
+			}
+			.dingdanli:hover{
+				color: #32A5E7;
+			}
+			.yc_ul{
+				display: none;
+				width: 158px;
+				height: 218px;
+				font-size: 12px;
+				background-color: #fff;
+				border: 1px solid  #666;
+			}
+			.yc_ul li{
+				width: 158px;
+				min-height: 40px;
+				list-style: none;
+				margin-left: 20px;
+				line-height: 40px;
+			}
+			.djli{
+				display: block;
+				margin-left: 20px;
+				/* position: absolute;
+				left: 50px;
+				top: 37px; */
+			}
+			.djli i{
+				font-style: normal;
+			}
+			.yc_ul{
+				position: absolute;
+				left: 1150px;
+				top: 57px;
+			}
+			.djli:hover .yc_ul{
+				display:block;
+				border-top: 1px solid transparent;
+			}
+			.djli:hover{
+				width: 160px;
+				height: 40px;
+				border-left:1px solid #666;
+				border-top: 1px solid #666;
+				border-right: 1px solid #666;
+				background-color: #fff;
+				margin-top: 17px;
+				margin-left: 4px;
+				line-height: 40px;
+				padding-left: 18px;
+				box-sizing: border-box;
+			}
+			/* .djli:hover i{
+				content: ︿;
+			}
+			 */
+			.yc_ul .lastlis{
+				box-sizing: border-box;
+				border-top: 1px solid #666;
+				margin-left: 0;
+			} 
+			.lastlis a{
+				margin-left: 20px;
+			}
+			#cart{
+				width: 100%;
+				min-height: 360px;
+				/* background-color:#F4F6FA ; */
+				text-align: center;
+				margin-top: 10px;
+				margin-bottom: 70px;
+				box-sizing: border-box;
+			}
+			.cart{
+				background-color: #fff;
+				min-height: 360px;
+				width: 1240px;
+				margin-left: 44px;
+			}
+			.cart-header{
+				    height: 50px;
+				    margin-top: 10px;
+				    font-size: 12px;
+				    background-color: #fff;
+				    color: rgba(51,51,51,.4);
+				    border-bottom: 1px solid #EFEFEF;
+			}
+			/* .cart-header td{
+				    width:500px;
+				    height: 50px;
+			}
+			.first-tr{
+				 width:1240px;
+				 height: 50px;
+				 background-color: #fff;
+			} */
+			
+			.logo{
+				font-size: 23px;
+				color: #008cff;
+				/* font-weight: bolder; */
+				line-height: 80px;
+				letter-spacing: 4px;
+				margin-right: 145px;
+			}
+			header{
+				height: 80px;
+				font-size: 14px;
+				line-height: 80px;
+				color: #b29999;
+				/* background-color: pink; */
+			}
+			
+			header i{
+				color: #333;
+			}
+			.header-a{
+				color: #b29999;
+				margin-left: 40px;
+			}
+			.header-a:hover{
+				color: #008cff;
+			}
+			section{
+				background-color: #f4f6fa;
+				min-height: 600px;
+				overflow: auto;
+			}
+			.car-header{
+				margin-top: 10px;
+				height: 50px;
+				border: 1px solid #efefef;
+				background-color: white;
+				line-height: 50px;
+			}
+			.all-select{
+				width: 18px;
+				height: 18px;
+				margin-left: 25px;
+				position: relative;
+				top: 3px;
+			}
+			.all-select+span{
+				margin-left: 10px;
+				color: #333;
+				font-size: 14px;
+			}
+			.car-header i{
+				color: #b2b2b2;
+				font-size: 14px;
+			}
+			.car-header i:nth-of-type(1){
+				margin-left: 630px;
+			}
+			.car-header i:nth-of-type(2){
+				margin-left: 160px;
+			}
+			.car-header i:nth-of-type(3){
+				margin-left: 140px;
+			}
+			.car-section{
+				margin-top: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #efefef;
+				background-color: white;
+			}
+			.car-li{
+				height: 150px;
+				background-color: #fff;
+				line-height: 150px;
+				position: relative;
+			}
+			.car-img{
+				/* display: block; */
+				width: 30px;
+				height: 30px;
+				margin-left: 0px;
+				/* position: ; */
+			}
+			.car-li .car-num{
+				position: absolute;
+				top: 60px;
+				left: 840px;
+				width: 87px;
+				height: 26px;
+				border: 1px solid #efefef;
+				line-height: 26px;
+			
+			}
+			.car-li .car-goods{
+				position: absolute;
+				top: 55px;
+				left: 200px;
+				width: 250px;
+				height: 52px;
+				/* border: 1px solid #333; */
+				line-height: 26px;
+				font-size: 14px;
+				color: #8c8c8c;
+			}
+			.car-goods h1{
+				color: #262626;
+				font-size: 16px;
+			}
+			.car-li .car-price{
+				position: absolute;
+				top: 60px;
+				left: 630px;
+				width: 200px;
+				height: 26px;
+				/* border: 1px solid #333; */
+				line-height: 26px;
+				font-size: 14px;
+				color: #8c8c8c;
+			}
+			.car-small-price{
+				position: absolute;
+				top: 60px;
+				left: 1040px;
+				width: 150px;
+				height: 26px;
+				/* border: 1px solid #333; */
+				line-height: 26px;
+				color: #e02b41;
+				font-size: 14px;
+			}
+			
+			.car-num-less,.car-num-more{
+				width: 24px;
+				height: 24px;
+				background-color: #fff;
+				position: relative;
+				border: none;
+				outline: none;
+				font-size: 20px;
+				cursor: pointer;
+			}
+			.car-num-less:hover,.car-num-more:hover{
+				color: #0077AA;
+			}
+			.car-num-less{
+				border-right: 1px solid #efefef;
+			}
+			.car-num-more{
+				border-left: 1px solid #efefef;
+				left: 0px;
+			}
+			.car-num span{
+				color: #333333;
+				text-align: center;
+				width: 25px;
+				display: inline-block;
+				position: relative;
+			}
+			.car-footer{
+				height: 70px;
+				line-height: 70px;
+				border: 1px solid #efefef;
+				background-color: white;
+			}
+			.all-select{
+				position: relative;
+				top: 0px;
+				left:65px;
+				background-color: #fff;
+				outline: none;
+				border: 1px solid #333;
+				cursor: pointer;
+			}
+			.car-footer span{
+				color: #595959;
+				font-size: 14px;
+			}
+			.car-footer span:nth-of-type(2){
+				margin-left: 16px;
+				cursor: pointer;
+			}
+			.car-footer span:nth-of-type(3){
+				margin-left: 20px;
+			}
+			.car-footer span:nth-of-type(5){
+				margin-left: 430px;
+			}
+			.car-footer i:nth-of-type(1){
+				color: #595959;
+				font-size: 14px;
+			}
+			.car-footer i:nth-of-type(2){
+				color: #00c3f6;
+				font-size: 14px;
+			}
+			.car-footer i:nth-of-type(2){
+				color: #e42b41;
+				font-size: 14px;
+			}
+			.car-footer i:nth-of-type(3){
+				color: #e02b41;
+				font-size: 16px;
+				font-weight: bolder;
+			}
+			.car-footer u{
+				color: #e02b41;
+				font-size: 14px;
+				font-weight: bolder;
+			}
+			.car-footer a{
+				position: relative;
+				display: inline-block;
+				background-color: rgb(246,101,103);
+				color: #fff;
+				font-size: 14px;
+				width: 98px;
+				height: 34px;
+				line-height: 34px;
+				text-align: center;
+				border-radius: 3px;
+			}
+			.no-load{
+				height: 600px;
+				background-color: #fff;
+				width: 1240px;
+				position: relative;
+				text-align: center;
+				padding-top: 100px;
+				box-sizing: border-box;
+				display: none;
+			}
+			.no-load img{
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%,-50%);
+			}
+			.no-load h1{
+				font-size: 20px;
+				color: #666666;
+				font-weight: bolder;
+			}
+			.no-load h2{
+				margin-top: 20px;
+				font-size: 16px;
+				color: #666666;
+			}
+			.no-load a{
+				display: inline-block;
+				margin-top: 20px;
+				width: 130px;
+				height: 36px;
+				background-color: #00c3f5;
+				color: #fff;
+				border-radius: 3px;
+				line-height: 36px;
+			}
+			.xuanze{
+				position: absolute;
+				left:115px ;
+				top: 80px;
+				border: 1px solid #000000;
+				width:18px ;
+				height: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="nav">
+				<img src="./img/meizu.png"  class="mz">
+				<ul class="left_ul">
+					<li class="li1"><a href="">购物车</a></li>
+					<li class="li2">确认订单</li>
+					<li class="li3">在线支付</li>
+					<li class="li4">完成</li>
+				</ul>
+				<ul class="right_ul">
+					<li class="dingdanli"><a href="">我的订单</a></li>
+					<li class="djli">用户的商城<i class="jiantou">﹀</i>
+					<ul class="yc_ul">
+						  <li>地址管理</li>
+						  <li>我的收藏</li>
+						  <li>我的回购金</li>
+						  <li class="secondli">问题反馈</li>
+						  <li class="lastlis"><a href="">退出</a>
+						
+					  </ul>
+					</li>
+				</ul>
+		</div>
+	<div id="cart">
+		<div class="cart">
+			<section>
+				<div class="car-header safe">
+					<input type="checkbox" name="" id="" value="" class="all-select" />
+					<span>全选</span>
+					<i>单价（元）</i>
+					<i>数量</i>
+					<i>小计（元）</i>
+				</div>
+				<ul class="car-section safe">
+
+					
+				</ul>
+				<div class="safe car-footer">
+					<input type="button" name="" id="" value="-" class="all-select delete-all" />
+					<span>删除</span>
+					<span>所有的商品</span>
+					<span>共</span>
+					<i class="numAll">0</i>
+					<span>件</span>
+					<span>已优惠</span>
+					<i class="red">0.00</i>
+					<span>,合计（不含运费）：</span>
+					<u>￥</u>
+					<i id="priceAll">0.00</i>
+					<a href="">去结算</a>
+				</div>
+				
+				<div class="safe no-load">
+					<h1>您还没有登录！</h1>
+					<h2>登录后可显示您账号中已加入的商品哦~</h2>
+					<a href="load.html">去登录</a>
+					<img src="img/details/panda.png" >
+				</div>
+			</section>
+		<!-- 	<tabel class="cart-header"  border="5">
+				<thead>
+				   <tr>
+					   <td><input type="checkbox"><span>全选</span></td>
+					   <td>全选</td>
+					   <td>单价(元)</td>
+					   <td>数量</td>
+					   <td>编辑</td>
+				    </tr>
+					<tr>
+					   <td><input type="checkbox"><span>魅族</span><span>已免运费</span></td>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</tabel> -->
+			</div>
+		</div>
+		
+		
+		<tfoot>
+			
+		</tfoot>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$(function () {
+	 	$('tfoot').load('jianjiefooter.html');
+	 });
+	 //购物车页面的渲染
+	 {$.ajax({
+	 	url:"gouwuche.php",
+	 	type:"get",
+	 	data:"",
+	 	success:function(resText){
+	 		let arr = JSON.parse(resText);
+	 		console.log(arr[0]["goodsname"]);
+	 		for(let i=0;i<arr.length;i++){
+	 			let oLi =`
+	 			<li class="car-li">
+	 				<input type="button" name="" id="" value="-" class="all-select delete" />
+	 				<p alt="" class="car-img trend-img" style="background-image:${arr[i]["goodsImg"]}"></p>
+	 				<div class="car-goods">
+	 					<h1 class="trend-name">${arr[i]["goodsName"]}</h1>
+	 				</div>
+	 				<div class="car-price">
+	 					<i>￥</i><span class="price trend-price">${arr[i]["money"]}</span>
+	 				</div>
+	 				
+	 				<div class="car-num">
+	 					<button class="car-num-less">-</button>
+	 					<span class="num">1</span>
+	 					<button class="car-num-more">+</button>
+	 				</div>s
+	 				<div class="car-small-price">
+	 					<i>￥</i><span class="samllPrice">${arr[i].money}</span>
+	 				</div>
+	 			</li>`
+	 			let oUl = document.querySelector(".car-section");
+	 			oUl.innerHTML += oLi;
+	 		}
+	 		//减少数量
+	 		$(".car-num-less").click(function(){
+	 			if($(this).next().html()!=0){
+	 			let num = $(this).next().html();
+	 			num--;
+	 			$(this).next().html(num);
+	 			smallprice();
+	 			priceall();
+	 			numall()
+	 			}
+	 		})
+	 		//增加数量
+	 		$(".car-num-more").click(function(){
+	 			let num = $(this).prev().html();
+	 			num++;
+	 			$(this).prev().html(num);
+	 			smallprice();
+	 			priceall();
+	 			numall();
+	 
+	 		})
+	 		//计算总价
+	 		function priceall(){
+	 			let PriceAll = 0;
+	 			for(let i=0;i<$(".samllPrice").length;i++){
+	 				PriceAll +=  Number($(".samllPrice").eq(i).html()); 
+	 			}
+	 			$("#priceAll").html(PriceAll);
+	 		}
+	 		//计算小计
+	 		function smallprice(){
+	 			for(let i=0;i<$(".samllPrice").length;i++){
+	 				//获取数量
+	 				let num = $(".samllPrice").eq(i).parent().prev().find("span").html();
+	 				//获取单价
+	 				let price = $(".samllPrice").eq(i).parent().prev().prev().find("span").html();
+	 				let mulp = num * price;
+	 				$(".samllPrice").eq(i).html(mulp);
+	 			}
+	 		}
+	 		//计算总数
+	 		function numall(){
+	 			let num = 0;
+	 			console.log(1);
+	 			for(let i=0;i<$(".num").length;i++){
+	 				console.log($(".num").eq(i).html());
+	 				num += Number($(".num").eq(i).html()) ;
+	 				$(".numAll").html(num);
+	 			}
+	 		}
+	 		$(".delete").click(function(){
+	 			let photo = $(this).next().attr("src");
+	 			$.ajax({
+	 				url:"deletecar.php",
+	 				type:"post",
+	 				data:"goodsimg="+photo,
+	 				success:function(resText){
+	 					alert("删除成功");
+	 					window.location.reload();
+	 				}
+	 			})
+	 		})
+	 		$(".delete-all").click(function(){
+	 			$.ajax({
+	 				url:"deleteAll.php",
+	 				type:"post",
+	 				data:"",
+	 				success:function(resText){
+	 					alert("成功清空购物车");
+	 					window.location.reload();
+	 				}
+	 			})
+	 		})
+	 		numall();
+	 		smallprice();
+	 		priceall();
+	 	}
+	 })}
+</script>

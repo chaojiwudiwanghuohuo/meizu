@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册页面</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{	
+					/* width: 100%; */
+				    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+				    font-size: 14px;
+				    color: #515151;
+					/* overflow-x: hidden; */
+			}
+			#load{
+				    width: 100%;
+			}
+			#load_header{
+				    height: 68px;
+					background-color: #fff;
+					box-sizing: border-box;
+			}
+			#load_header img{
+				   margin-left:70px;
+				   margin-top: 26px;
+			}
+			#load_box{
+				    position: relative;
+					width: 100%;
+				    min-height: 750px;
+				    max-height: 1080px;
+				    background: #f8fcff;
+					overflow: hidden;
+				    background: linear-gradient(180deg, #edfcfd 0%, #faffff 100%) !important;
+			}
+			#load_box img{
+				position:absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+			#load_box #mainform{
+				    width: 298px;
+				    position: absolute;
+				    top: 16%;
+				    right: 85px;
+				    background-color: #FFF;
+				    padding: 72px 35px 20px;
+				    border-radius: 2px;
+				    box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
+					text-align: center;
+			}
+			.phoneNumber{
+				width:228px ;
+				height: 42px;
+				border: 1px solid #dadada;
+				float: left;
+			}
+			#select_box{
+				width:298px ;
+				height: 42px;
+				margin-top:104px;
+				margin-bottom: 38px;
+			}
+			#select_box span{
+				width:62px ;
+				height: 42px;
+				display: inline-block;
+				border: 1px solid #dadada;
+				float: left;
+			}
+			#select_box .select{
+				outline: none;
+				width:42px ;
+				height: 40px;
+				border: none;
+			}
+			#select_box span i{
+				width:15px;
+				height:10px;
+				font-style: normal;
+			}
+			.title{
+				    width: 134px;
+					height: 24px;
+				    color: #387aff;
+					font-size: 18px;
+					text-align: center;
+					text-decoration: none;
+			}
+			#yanzheng{
+				width: 296px;
+				height: 42px;
+				line-height: 42px;
+				font-size: 14px;
+				color: #666;
+				white-space: nowrap;
+				text-align: left;
+				border: 1px solid #dadada;
+				position: relative;
+				margin-bottom: 20px;
+				/* display: block; */
+			}
+			#yanzheng span{
+				float: left;
+				display: inline-block;
+			}
+			#yanzheng  .first_img{
+				margin-top: 8px;
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				left: 15px;
+				top: 12px;
+			}
+			.second_img{
+				width: 30px;
+				height: 30px;
+				background-image: url(img/load.png);
+				background-position: -0px -100px;
+				position: absolute;
+				left: 260px;
+				top: 10px;
+				display: block;
+			}
+			.wangluo{
+				position: absolute;
+				left: 45px;
+				top: 0;
+				color:#005aff;
+			}
+			.again{
+				position: absolute;
+				left: 50px;
+				top: 0;
+				font-size: 12px;
+				display: block;
+			}
+			.two{
+				position: absolute;
+				left: 280px;
+				top: 13px;
+				font-size: 12px;
+			}
+			#agree{
+				position: relative;
+			}
+			#agree i{
+				display: inline-block;
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				border: 1px solid #dadada;
+				list-style: none;
+				margin-top: 5px;
+			}
+			#agree i img{
+				display: none;
+				position: absolute;
+				left: 13px;
+				top: 15px;
+			}
+			#agree a{
+				color:#005aff;
+			}
+			.reg{
+				display: inline-block;
+				height: 46px;
+				width: 296px;
+				color: #fff;
+				background-color: #32a5e7;
+				text-decoration: none;
+				line-height: 46px;
+				margin-top:10px;
+				margin-bottom: 20px;
+			}
+			.reg:hover{
+				background-color: #3058df;
+			}
+			.agree_load{
+				text-decoration: none;
+				margin-left:-260px;
+				color:#005aff;
+			}
+			.success{
+				position: absolute;
+				left: 0px;
+				top:10px ;
+				display: none;
+			}
+			.mz{
+				margin-left:70px ;
+				margin-top: 26px;
+			}
+			.xiaoshi{
+				/* display: block; */
+				opacity: 1;
+			}
+			.chuxian{
+				display: none;
+				/* display: block; */
+				position:absolute;
+				left:35px;
+				top:240px;
+				width:298px;
+				height:50px;
+				text-align:center;
+			}
+			.big_let{
+				font-size: 16px;
+				font-weight:bold;
+				color: #000;
+			}
+			.small_let{
+				font-size: 14px;
+				margin-top:10px ;
+				color: #909090;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="load">
+			<div ids="load_header">
+				<img src="./img/meizu.png" class="mz">
+			</div>
+			<div id="load_box">
+				<img src="./img/pic-flyme.png">
+				<form action="" method="post" id="mainform">
+					<a href="" class="title">注册 Flyme 账号</a>
+				<div class="xiaoshi">
+			     
+						<div id="select_box">
+						<span>
+							<select class="select">
+								<option>+86</option>
+								<option>常用</option>
+								<option>中国+86</option>
+								<option>中国台湾+886</option>
+								<option>中国香港+852</option>
+								<option>Brazil+55</option>
+								<option>India+91</option>
+								<option>Indonesia+62</option>
+								<option>Malaysia+60</option>
+								<option>A</option>
+								<option>Andorra+376</option>
+								<option>Afghanistan+93</option>
+								<option>Antigua and Barbuda+1</option>
+								<option>Anguilla+1</option>
+								<option>Albania+355</option>
+								<option>Armenia+374</option>
+								<option>Angola+244</option>
+								<option>Argentina+54</option>
+								<option>American Samoa+1</option>
+								<option>Austria+43</option>
+								<option>Australia+61</option>
+								<option>Aruba+297</option>
+								<option>Azerbaijan+994</option>
+								<option>Algeria+213</option>
+								<option>B</option>
+								<option>Bosnia and Herzegovina+387</option>
+								<option>Barbados+1</option>
+								<option>Bangladesh+880</option>
+								<option>Belgium+32</option>
+								<option>Burkina Faso+226</option>
+								<option>Bulgaria+359</option>
+								<option>Bahrain+973</option>
+								<option>Burundi+257</option>
+								<option>Benin+229</option>
+							</select>
+						</span>
+						<input class="phoneNumber" type="text" name="phoneNumber" maxlength="11" placeholder="手机号码">
+					</div>
+					<div id="yanzheng">
+					    <img src="./img/quan.png" class="first_img">
+						<img src="./img/success.png" class="success">
+						<span class="again">点击按钮进行验证</span>
+						<div class="second_img"></div>
+					</div>
+					<div id="agree">
+						<i><img src="./img/duigou.png" class="agree_img"></i>
+						<label>注册账号即表示您同意并愿意遵守</label>
+						<a href="">Flyme账号服务协议</a>
+						<label>、</label>
+						<a href="">法律声明</a>
+						<label>和</label>
+						<a href="">隐私政策</a>
+					</div>
+				</div>
+				
+				<div class="chuxian">
+					<div class="big_let">+86</div>
+					<div class="small_let">该手机号已注册 Flyme 账号</div>
+				</div>
+					<a href="load.html"><button type="button" class="reg">立即注册</button></a>
+					<a href="loadin.html" class="agree_load">登录</a>
+				</form>
+			</div>
+		
+			<div id="load_bottom"></div>
+			<foot></foot>
+		</div>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function () {
+	 	$('foot').load('jianjiefooter.html');
+	 });
+	//验证只有当验证成功和单选框都选中手机号输入满足正则才能进行跳转
+	let successFlag=false;
+	let duigouFlag=false;
+	$(".agree_img").click(function(){
+		duigouFlag=true;
+		console.log(duigouFlag);
+	});
+	$(".success").click(function(){
+		successFlag=true;
+		console.log(successFlag)
+	});
+	//验证手机号是否输入正确
+	let str=/^(13|15|18)\d{9}$/;
+	$(".reg").click(function(){
+		if(str.test($(".phoneNumber").val()) && successFlag==1 && duigouFlag==1 ){
+			$.ajax({
+				url:'registe.php',
+				type:'post',
+				data:'phoneNumber=' + $('.phoneNumber').val(),
+				success:function(restext){
+					if(restext == '1'){
+					   //注册成功后做的事
+					   $(".xiaoshi").css({
+						   opacity:"0",
+					   });
+					   $(".big_let").html('+86' +$('.phoneNumber').val());
+					   $(".chuxian").css({
+						   display:"block"
+					   });
+					   $(".reg").html("立即登录");
+					   // location.href = "loadin.html";
+					}else{
+						//手机号不存在可以注册后做的事
+						//就把这个手机号插入到数据库
+					}
+				}
+			});
+		}
+	});
+	$("#yanzheng").click(function(){
+		$(".success").css({
+			"display":"block"
+		});
+		 $(".again").css({"display":"none"});
+		 $(".second_img").css({"display":"none"});
+	});
+    $("#agree i").click(function(){
+		$("#agree i img").css({
+			"display":"block"
+		});
+	});
+</script>

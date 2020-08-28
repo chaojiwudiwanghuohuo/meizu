@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>登录页面</title>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			body{
+				    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
+				    font-size: 14px;
+				    color: #515151;
+			}
+			#load{
+				    width: 100%;
+			}
+			#load_header{
+				    height: 68px;
+					background-color: #fff;
+					box-sizing: border-box;
+			}
+			#load_header img{
+				   margin-left:70px;
+				   margin-top: 26px;
+			}
+			#load_box{
+				    position: relative;
+					width: 100%;
+					overflow: hidden;
+				    min-height: 750px;
+				    max-height: 1080px;
+				    background: #f8fcff;
+				    background: linear-gradient(180deg, #edfcfd 0%, #faffff 100%) !important;
+			}
+			#load_box .flyImg{
+				position:absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+			#load_box #mainform{
+				    width: 298px;
+				    position: absolute;
+				    top: 16%;
+				    right: 85px;
+				    background-color: #FFF;
+				    padding: 72px 35px 20px;
+				    border-radius: 2px;
+				    box-shadow: 0 6px 12px 0 rgba(138,153,150,0.15);
+					text-align: center;
+			}
+			.phoneNumber{
+				width:228px ;
+				height: 42px;
+				border: 1px solid #dadada;
+				float: left;
+			}
+			.yanzhengma{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width:149px;
+				height: 42px;
+				border: 1px solid #dadada;
+				float: left;
+			}
+			.yanzhengma_btn{
+				margin-top: 20px;
+				margin-bottom: 20px;
+				width:102px;
+				height: 42px;
+				line-height: 42px;
+				border: 1px solid #dadada;
+				float: left;
+				font-style: normal;
+			}
+			#select_box{
+				width:298px ;
+				height: 42px;
+				margin-top:104px;
+				margin-bottom: 38px;
+			}
+			#select_box span{
+				width:62px ;
+				height: 42px;
+				display: inline-block;
+				border: 1px solid #dadada;
+				float: left;
+			}
+			#select_box .select{
+				outline: none;
+				width:42px ;
+				height: 40px;
+				border: none;
+			}
+			#select_box span i{
+				width:15px;
+				height:10px;
+				font-style: normal;
+			}
+			.title{
+				    width: 134px;
+					height: 24px;
+				    color: #387aff;
+					font-size: 18px;
+					text-align: center;
+					text-decoration: none;
+			}
+			.mz{
+				margin-left:70px ;
+				margin-top: 26px;
+			}
+			.denglu{
+				display: block;
+				width:300px ;
+				height:46px ;
+				background-color:#3058df ;
+				cursor: pointer;
+				border-radius: 4px;
+				font-size: 14px;
+				line-height: 46px;
+				text-align: center;
+				color: #fff;
+				margin-bottom: 10px;
+			}
+			.reg{
+				text-decoration: none;
+				    color: #387aff;
+					margin-left: -20px;
+			}
+			.reg_pwd{
+				text-decoration: none;
+				    color: #387aff;
+					margin-left: 190px;
+			}
+			.rr{
+				position: absolute;
+				left:322px ;
+				top:1px ;
+			}
+			.scyzm{
+				width: 40px;
+				height: 42px;
+				border: 1px solid #dadada;
+				float: left;
+				margin-top: 20px;
+				text-align: center;
+				line-height: 42px;
+			}
+			.yesregiste{
+				width: 300px;
+				height: 35px;
+				border: solid 1px #ffc2b3;
+				background: #ffd1ca;
+				border-radius: 2px;
+				text-align: center;
+				line-height: 35px;
+				position: absolute;
+				left: 30px;
+				top: 140px;
+				display: none;
+			} 
+			.yesregiste a{
+				margin-top: 5px;
+				text-decoration: none;
+				color: #32A5E7;
+			}
+			.yesregiste a:hover{
+				color: #3058df;
+			}
+			.yesregiste span{
+				margin-top: 5px;
+				color: #666;
+				font-size: 12px;
+			}
+			.yesregiste img:nth-child(1){
+				margin-top: 10px;
+			}
+			.yesregiste img:nth-child(2){
+				margin-top: 5px;
+				margin-left:30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="load">
+			<div ids="load_header">
+				<img src="./img/meizu.png"  class="mz">
+			</div>
+			<div id="load_box">
+				<img src="./img/pic-flyme.png" class="flyImg">
+				<form action="" method="post" id="mainform">
+					<img src="./img/rr.png" class="rr">
+					<a href="" class="title">验证码登录</a>
+					<div class="yesregiste">
+						<img src="./img/left.png">
+						<span>该手机号码尚未注册，</span>
+						<a href="loadin.html">立即注册</a>
+						<img src="./img/right.png">
+					</div>
+					<div id="select_box">
+						<span>
+							<select class="select">
+								<option>+86</option>
+								<option>常用</option>
+								<option>中国+86</option>
+								<option>中国台湾+886</option>
+								<option>中国香港+852</option>
+								<option>Brazil+55</option>
+								<option>India+91</option>
+								<option>Indonesia+62</option>
+								<option>Malaysia+60</option>
+								<option>A</option>
+								<option>Andorra+376</option>
+								<option>Afghanistan+93</option>
+								<option>Antigua and Barbuda+1</option>
+								<option>Anguilla+1</option>
+								<option>Albania+355</option>
+								<option>Armenia+374</option>
+								<option>Angola+244</option>
+								<option>Argentina+54</option>
+								<option>American Samoa+1</option>
+								<option>Austria+43</option>
+								<option>Australia+61</option>
+								<option>Aruba+297</option>
+								<option>Azerbaijan+994</option>
+								<option>Algeria+213</option>
+								<option>B</option>
+								<option>Bosnia and Herzegovina+387</option>
+								<option>Barbados+1</option>
+								<option>Bangladesh+880</option>
+								<option>Belgium+32</option>
+								<option>Burkina Faso+226</option>
+								<option>Bulgaria+359</option>
+								<option>Bahrain+973</option>
+								<option>Burundi+257</option>
+								<option>Benin+229</option>
+							</select>
+						</span>
+						<input class="phoneNumber" type="text" name="phoneNumber" maxlength="11" placeholder="手机号码">
+						<input class="yanzhengma" type="text" name="yanzhengma" placeholder="验证码">
+						<div class="scyzm"></div>
+						<i  class="yanzhengma_btn" value="">点击生成验证码</i>
+					</div>
+					<button type="button" class="denglu">登录</button>
+					<a href="" class="reg">注册</a>
+					<a href="" class="reg_pwd">忘记密码</a>
+				</form>
+			</div>
+			<div id="load_bottom"></div>
+			
+			<foot></foot>
+		</div>
+	</body>
+</html>
+<script src="jQuery.js"></script>
+<script>
+	$(function () {
+	 	$('foot').load('jianjiefooter.html');
+	 });
+    $(".yanzhengma_btn").click(function(){
+		let str="abcdefghijklmnopqistuvxywz0123456789";
+		let strs="";
+		for(let i=0;i<4;i++){
+			strs+=str.charAt(Math.floor(Math.random()*str.length));
+		}
+		$(".scyzm").html(strs);
+	});
+	let yzmFlag=false;
+	if($(".scyzm").html()==$(".yanzhengma").val()){
+		yzmFlag=true;
+	}
+	//input失去光标时显示 手机号是否已经注册 没注册出现该手机号还未注册
+	$(".phoneNumber").blur(function(){
+		let str=/^(13|15|18)\d{9}$/;
+		if(str.test($(".phoneNumber").val())){
+			$.ajax({
+				url:'loadin.php',
+				type:'post',
+				data:'phoneNumber=' + $('.phoneNumber').val(),
+				success:function(restext){
+					console.log(restext);
+					if(restext == 1){
+					
+					}else{
+						//告诉用户改手机号还未注册
+						$(".yesregiste").css({
+							display:"block"
+						});
+					}
+				}
+			});
+		}
+	});
+	//验证手机号是否输入正确
+	let str=/^(13|15|18)\d{9}$/;
+	$(".denglu").click(function(){
+		if(str.test($(".phoneNumber").val())){
+			$.ajax({
+				url:'loadin.php',
+				type:'post',
+				data:'phoneNumber=' + $('.phoneNumber').val(),
+				success:function(restext){
+					if(restext == '1'){
+						if(restext == '1'&& yzmFlag=='1'){
+							location.href='homePage.html';
+						}
+					}else{
+						//手机号不存在可以注册后做的事
+						//就把这个手机号插入到数据库
+					}
+				}
+			});
+		}
+	});
+</script>

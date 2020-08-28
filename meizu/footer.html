@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>底部</title>
+	    <style>
+			#footer{
+				width: 100%;
+				height: 248px;
+				background-color: #fff;
+			}
+			#footer_top{
+				width: 100%;
+				height: 140px;
+				text-align: center;
+				background-color: #fff;
+				margin-top: 48px;
+			}
+			  #footer_top .footer_ul{
+				width: 1000px;
+				height: 69px;
+				float: left;
+				text-align: center;
+				margin-left: 26px;
+				margin-top: 48px;
+			}
+			#footer_top .footer_ul a{
+				width: 150px ;
+				height: 69px;
+			}
+			#footer_top .footer_ul li{
+				float: left;
+				list-style: none;
+				width: 150px;
+				height: 69px;
+				text-align: center;
+			}
+			#footer_top ul li span{
+				line-height: 30px;
+				color: #999;
+				font-size: 12px;
+			}
+			#footer_top .footer_img{
+				width: 50px;
+				height: 39px;
+				display: block;
+				margin: 0 50px;
+			}
+			#footer_top .online_server{
+				width:155.7px ;
+				height:103px ;
+				float: left;
+				margin-top: 30px;
+				margin-left: 100px;
+			}
+			#footer_top .online_server  span{
+				       color: #999;
+				       font-size: 12px;
+				       line-height: 30px;
+					   display:block ; 
+			}
+			#footer_top .online_server  p{
+				    color: #008cff;
+				    font-size: 23px;
+				    font-weight: 400;
+				    margin-top: -6px;
+				    line-height: 40px;
+			}
+			#footer_top .online_server a{
+				    height: 30px;
+				    padding: 0 16px;
+				    overflow: hidden;
+				    position: relative;
+				    line-height: 30px;
+				    color: #fff;
+				    border-radius: 20px;
+				    margin-top: 3px;
+				    display: inline-block;
+				    font-size: 14px;
+				    background: #008cff;
+					text-decoration: none;
+			}
+			 .footer-hr {
+			    margin: 10px  50px;
+			    display: block;
+			    height: 1px;
+			    border: 0;
+			    border-top: 1px solid #eee;
+			    padding: 0;
+			}
+			#footer_bottom{
+				width:100% ;
+				height: 55px;
+				margin-left: 30px;
+			}
+			#footer_bottom .bottom_ul {
+				width:974x ;
+				height: 18px;
+				color: #999;
+				text-align: left;
+				font-size: 12px;
+				margin-left:20px ;
+			}
+			#footer_bottom .bottom_ul .lastli{
+				border-right: 1px solid transparent;
+				position: relative;
+			}
+			#footer_bottom .bottom_ul li{
+				    padding-right: 15px;
+				    border-right: 1px solid #d6d6d6;
+				    float: left;
+				    height: 18px;
+				    margin-right: 15px;
+					list-style: none;
+			}
+			#footer_bottom .bottom_ul a{
+				    color: #999;
+				    display: block;
+				    line-height: 18px;
+			}
+			 .language {
+				 display: none;
+				 width: 114px;
+				 height: 190px;
+				 border: 1px solid #eee;
+				 font-size: 12px;
+				 background-color: #fff;
+				 box-sizing: border-box;
+				 position: absolute;
+				 left: -16px;
+				 top: -200px;
+			 } 
+			 #footer_bottom .bottom_ul .language li{
+				width: 114px;
+				height: 35px; 
+				margin-left:16px;
+				margin-top: 5px;
+				padding-right: 0;
+				border-right:1px solid transparent;
+				margin-right:0;
+				list-style: none;
+			 }
+			 .language img{
+				width: 18px;
+				height: 18px;				 
+			}
+			 .lastli_logo{
+				 width: 18px;
+				 height: 18px;
+			 }
+			#footer_bottom .bottom_ul a:hover {
+			    color: #008cff;
+			}
+			.footer_bottomright{
+				width: 160px;
+				height: 30px;
+			}
+			.footer_bottomleft{
+				color: #999;
+				width: 943px;
+				text-align: left;
+				font-size: 12px;
+				box-sizing: border-box;
+				margin-top: 10px;
+				margin-left: 20px;
+				float: left;
+			}
+			.footer_bottomleft a{
+				text-decoration: none;
+				margin-left: 8px;
+			}
+			.footer_bottomleft a:hover{
+			    color: #008cff;
+			}
+			.footer_bottomright{
+				width:160px ;
+				height: 30px;
+				float: left;
+				margin-top: 10px;
+				margin-left: 90px;
+			}
+			.footer_bottomright img{
+				width: 20px;
+				height:20px ;
+				margin-right: 10px;
+			}
+			.footer_bottomright a{
+				margin-right: 5px;
+				position: relative;
+			}
+			.footer_bottomright i .erweima1{
+				width: 180px;
+				height:180px ;
+				position: absolute;
+				left:-60px;
+				top:-190px;
+				display: none;
+			}
+			.footer_bottomright i .erweima2{
+				width: 180px;
+				height:180px ;
+				position: absolute;
+				left:-60px;
+				top:-190px;
+				display: none;
+			}
+			.erweima:hover  .erweima1{
+				display: block;
+			}
+			.wechat:hover  .erweima2{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="footer">
+			<div id="footer_top"> 
+				<ul class="footer_ul">
+					<li>
+						<a href=""><img src="./img/footer1.png" class="footer_img"></a>
+						<span>满80免运费</span>
+					</li>
+					<li>
+						<a href=""><img src="./img/footer2.png" class="footer_img"></a>
+						<span>100+ 城市次日送达</span>
+					</li>
+					<li>
+						<a href=""><img src="./img/footer3.png" class="footer_img"></a>
+						<span>7天无理由退货</span>
+					</li>
+					<li>
+						<a href=""><img src="./img/footer4.png" class="footer_img"></a>
+						<span>15天换货保障</span>
+					</li>
+					<li>
+						<a href=""><img src="./img/footer5.png" class="footer_img"></a>
+						<span>1年免费保修</span>
+					</li>
+					<li>
+						<a href=""><img src="./img/footer6.png" class="footer_img"></a>
+						<span>上门快修</span>
+					</li>
+				</ul>
+				<div class="online_server">
+					<span>周一至周日 8:00-20:00</span>
+					<p>400-788-3333</p>
+					<a href="">在线客服</a>
+				</div>
+			</div>
+			<hr class="footer-hr">
+			<div id="footer_bottom">
+				<ul  class="bottom_ul">
+					<li><a href="">了解魅族</a></li>
+					<li><a href="">加入我们</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">Flyme</a></li>
+					<li><a href="">魅族社区</a></li>
+					<li><a href="">天猫旗舰店</a></li>
+					<li><a href="">问题反馈</a></li>
+					<li><a href="">线上销售授权名单公示</a></li>
+					<li><a href="">出版物经营许可证</a></li>
+					<li class="lastli">
+						<a href=""><img src="./img/logo1.png"  class="lastli_logo">简体中文</a>
+						<ul class="language">
+							<li>
+								<a href="">
+							        <img src="./img/logo1.png"><span>简体中文</span>    <!-- 图标 -->
+						         </a>
+							</li>
+							<li>
+								<a href="">
+							         <img src="./img/logo2.png"><span>繁體中文</span>   <!-- 图标 -->
+							     </a>
+							</li>
+							<li>
+								<a href="">
+							         <img src="./img/logo3.png"><span>English</span>     <!-- 图标 -->
+							     </a>
+							</li>
+							<li>
+								<a href="">
+							         <img src="./img/logo4.png"><span>Русский</span>     <!-- 图标 -->
+							     </a>
+							</li>
+							<li>
+								<a href="">
+							         <img src="./img/logo5.png"><span>Türkiye</span>     <!-- 图标 -->
+							     </a>
+							</li>
+						</ul>
+				    </li>
+				</ul>
+				<div  class="footer_bottomleft">
+					©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved. 
+					   <a href="">粤ICP备13003602号</a>
+					   <a href="">合字B2-20170010 </a>
+					   <a href="">营业执照</a>
+					   <a href="">法律声明</a>
+					   <span>粤公网安备 44049102496009 号</span>
+					   <a href=""></a>
+					   <a href=""></a>
+					   <a href=""></a>
+				</div>
+				 <div class="footer_bottomright">
+					<a href=""><img src="./img/lianxi1.png" class="erweima"><i><img src="./img/erweima1.png"  class="erweima1"></i></a>
+					<a href=""><img src="./img/lianxi3.png" class="wechat"><i><img src="./img/erweima2.jpg" class="erweima2"></i></a>
+					<a href=""><img src="./img/lianxi5.png" alt="qq"></a>
+					<a href=""><img src="./img/lianxi7.png" alt="sina"></a>
+				</div>
+			</div>
+	</body>
+</html>
